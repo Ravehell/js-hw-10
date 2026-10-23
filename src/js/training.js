@@ -249,6 +249,32 @@
 // const result = numbers.filter(number => number < 15).toSorted((a, b) => b - a).slice(0, 3).reduce((total, number) => total + number, 0)
 
 
-const numbers = [4, 9, 12, 7, 18, 3, 25, 10];
+// const numbers = [4, 9, 12, 7, 18, 3, 25, 10];
 
-const result = numbers.some(number => number > 20) ? numbers.find(number => number > 15) : undefined
+// const result = numbers.some(number => number > 20) ? numbers.find(number => number > 15) : undefined
+
+// const numbers = [5, 12, 8, 20, 3, 16, 7, 24];
+
+// const result = numbers.filter(number => number > 10).reverse().join(", ")
+
+
+// const numbers = [4, 11, 6, 19, 8, 23, 14, 2];
+
+// const arr = numbers.slice(1, 6);
+
+// arr.splice(0, 1, 100);
+
+// const sorted = arr.toSorted((a, b) => a - b);
+
+// const result = sorted.indexOf(100);
+
+
+const users = [
+    { name: "Андрій", age: 17, score: 75 },
+    { name: "Олена", age: 22, score: 91 },
+    { name: "Максим", age: 19, score: 64 },
+    { name: "Ірина", age: 25, score: 88 },
+    { name: "Денис", age: 16, score: 95 },
+];
+
+const result = users.filter(user => user.age >= 18).toSorted((a, b) => a.score - b.score).map(user => user = `${user.name} : ${user.score}`).join(" | ")
