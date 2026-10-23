@@ -177,13 +177,78 @@
 // Array.isArray(fruits)
 
 
-const word = "hello";
+// const word = "hello";
 
-Array.from(word)
+// Array.from(word)
 
-Array.of(10, 20, 30)
-
-
+// Array.of(10, 20, 30)
 
 
 
+// const numbers = [15, 4, 22, 8, 31, 12, 7, 25];
+
+// const result = numbers.filter(number => number > 10).map(number => number * 2).sort((a, b) => a - b)
+
+// const numbers = [7, 14, 3, 22, 9, 18, 5, 26, 11];
+
+// const result = numbers.findIndex(number => number > 10 && number % 3 === 0)
+
+
+
+// const numbers = [12, 7, 24, 5, 18, 9, 30];
+
+// const allPositive = numbers.every(number => number > 0)
+
+// const hasLarge = numbers.some(number => number > 20)
+
+
+// const fruits = ["apple", "banana", "orange", "banana", "kiwi"];
+
+// const result = fruits.slice(0, 3).concat("mango", "peach").join(", ")
+
+
+// const numbers = [3, 8, 3, 12, 8, 3, 15, 8];
+
+// const hasEight = numbers.includes(8)
+// const firstThree = numbers.indexOf(3)
+// const lastEight = numbers.lastIndexOf(8)
+
+
+// const numbers = [10, 20, 30, 40, 50];
+
+// const reverse = numbers.toReversed()
+// const sortedDesc = numbers.toSorted((a, b) => b - a)
+
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// numbers.unshift(0)
+// numbers.push(6)
+// numbers.shift()
+// numbers.pop()
+
+
+// const numbers = [2, 4, 6, 8, 10, 12];
+// numbers.slice(1, 4).splice(1, 1, 99).join("-")
+
+
+// const values = [1, 2, 3];
+// const text = "hello";
+
+// Array.from(text).map((value, index) => value + index).join("")
+
+
+// const numbers = [5, 12, 8, 21, 4, 17, 30];
+
+// const result = numbers.filter(number => number > 10).join(" | ")
+
+
+
+// const numbers = [3, 8, 12, 5, 20, 7, 15, 2];
+
+// const result = numbers.filter(number => number < 15).toSorted((a, b) => b - a).slice(0, 3).reduce((total, number) => total + number, 0)
+
+
+const numbers = [4, 9, 12, 7, 18, 3, 25, 10];
+
+const result = numbers.some(number => number > 20) ? numbers.find(number => number > 15) : undefined
