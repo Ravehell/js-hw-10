@@ -269,12 +269,12 @@
 // const result = sorted.indexOf(100);
 
 
-const users = [
-    { name: "Андрій", age: 17, score: 75 },
-    { name: "Олена", age: 22, score: 91 },
-    { name: "Максим", age: 19, score: 64 },
-    { name: "Ірина", age: 25, score: 88 },
-    { name: "Денис", age: 16, score: 95 },
-];
+// const users = [
+//     { name: "Андрій", age: 17, score: 75 },
+//     { name: "Олена", age: 22, score: 91 },
+//     { name: "Максим", age: 19, score: 64 },
+//     { name: "Ірина", age: 25, score: 88 },
+//     { name: "Денис", age: 16, score: 95 },
+// ];
 
-const result = users.filter(user => user.age >= 18).toSorted((a, b) => a.score - b.score).map(user => user = `${user.name} : ${user.score}`).join(" | ")
+// const result = users.filter(user => user.age >= 18).toSorted((a, b) => a.score - b.score).map(user => user = `${user.name} : ${user.score}`).join(" | ")
