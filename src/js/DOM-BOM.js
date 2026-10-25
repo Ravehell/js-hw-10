@@ -72,27 +72,98 @@
 // })
 
 
-const form = document.querySelector("#shoppingForm")
-const list = document.querySelector("#shoppingList")
-const item = document.querySelector("#itemCount")
-const input = document.querySelector("#shoppingInput")
+// const form = document.querySelector("#shoppingForm")
+// const list = document.querySelector("#shoppingList")
+// const item = document.querySelector("#itemCount")
+// const input = document.querySelector("#shoppingInput")
 
-let count = 0
+// let count = 0
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault()
+// form.addEventListener("submit", (event) => {
+//     event.preventDefault()
 
-    if (input.value.trim() === "") {
-        return
-    }
+//     if (input.value.trim() === "") {
+//         return
+//     }
 
-    const element = document.createElement("li")
-    element.textContent = input.value
-    list.append(element)
+//     const element = document.createElement("li")
+//     const deleteBtn = document.createElement("button")
+//     deleteBtn.textContent = "Видалити"
+//     element.textContent = input.value
+//     element.append(deleteBtn)
+//     list.append(element)
 
-    count++
-    item.textContent = `Кількість товарів: ${count}`
-    input.value = ""
 
+//     deleteBtn.addEventListener("click", (event) => {
+//         element.remove()
+//         count--
+//         item.textContent = `Кількість товарів: ${count}`
+//     })
+
+//     count++
+//     item.textContent = `Кількість товарів: ${count}`
+//     input.value = ""
+
+// })
+
+
+// const form = document.querySelector("#taskForm")
+// const input = document.querySelector("#taskInput")
+// const list = document.querySelector("#taskList")
+// const task = document.querySelector("#taskCount")
+
+// function updateCount() {
+//     const items = Array.from(list.querySelectorAll("li"))
+
+//     const unfinished = items.filter((item) => {
+//         return !item.classList.contains("done")
+
+//     })
+//     task.textContent = `Невиконаних справ: ${unfinished.length}`
+// }
+
+// form.addEventListener("submit", (event) => {
+//     event.preventDefault()
+
+//     if (input.value.trim() === "") {
+//         return
+//     }
+
+//     const li = document.createElement("li")
+
+//     li.addEventListener("click", () => {
+//         li.classList.toggle("done")
+//         updateCount()
+//     })
+
+//     li.textContent = input.value
+//     const btn = document.createElement("button")
+//     btn.textContent = "Видалити"
+
+//     btn.addEventListener("click", (event) => {
+//         event.stopPropagation()
+//         li.remove()
+//         updateCount()
+//     })
+
+//     li.append(btn)
+//     list.append(li)
+//     input.value = ""
+//     updateCount()
+
+
+// })
+
+
+const deleteCompleteBtn = document.querySelector("#deleteCompletedBtn")
+
+deleteCompleteBtn.addEventListener("click", () => {
+    const completed = list.querySelectorAll(".done")
+
+    completed.forEach((item) => {
+        item.remove()
+    })
+
+    updateCount()
 })
 
