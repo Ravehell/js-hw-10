@@ -155,15 +155,47 @@
 // })
 
 
-const deleteCompleteBtn = document.querySelector("#deleteCompletedBtn")
+// const deleteCompleteBtn = document.querySelector("#deleteCompletedBtn")
 
-deleteCompleteBtn.addEventListener("click", () => {
-    const completed = list.querySelectorAll(".done")
+// deleteCompleteBtn.addEventListener("click", () => {
+//     const completed = list.querySelectorAll(".done")
 
-    completed.forEach((item) => {
-        item.remove()
-    })
+//     completed.forEach((item) => {
+//         item.remove()
+//     })
 
-    updateCount()
-})
+//     updateCount()
+// })
 
+
+// const doneCompleteBtn = document.querySelector("#doneCompleteBtn")
+
+
+// doneCompleteBtn.addEventListener("click", () => {
+
+//     const items = list.querySelectorAll("li")
+
+//     items.forEach((item) => {
+//         item.classList.add("done")
+//     })
+
+//     updateCount()
+// })
+
+
+
+// const categories = document.querySelector("#categories")
+// const list = categories.querySelectorAll("li.item")
+
+// console.log(list.length)
+
+// list.forEach((item) => {
+//     const h2 = item.querySelector("h2")
+//     console.log(h2.textContent)
+
+//     const ul = item.querySelector("ul")
+//     const li = item.querySelector("li").length
+
+//     console.log(li)
+
+// })
