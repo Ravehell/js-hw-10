@@ -4,6 +4,7 @@
 //     city: "Zhytomyr"
 // };
 
+const { use } = require("react");
 const { jsx } = require("react/jsx-runtime");
 
 
@@ -42,9 +43,56 @@ const { jsx } = require("react/jsx-runtime");
 // console.log(multiply(4, 5));
 
 
-export default function divide(a, b) {
-    return a / b;
+// export default function divide(a, b) {
+//     return a / b;
+// }
+
+// import division from "./main.js"
+// console.log(division(20, 4))
+
+
+// const json = '{"name":"Alex","age":21,"isStudent":true}';
+
+// const product = JSON.parse(json)
+// console.log(product.name, product.age)
+
+
+// const car = {
+//     brand: "Toyota",
+//     model: "Corolla",
+//     year: 2020
+// };
+
+// const carJson = JSON.stringify(car)
+// console.log(carJson);
+
+
+// const user = {
+//     name: "Max",
+//     age: 25
+// };
+
+// const product = JSON.stringify(user)
+// localStorage.setItem("user", product)
+
+// const users = localStorage.getItem("user",)
+// const data = JSON.parse(users)
+
+
+export function multiply(a, b) {
+    return a * b;
 }
 
-import division from "./main.js"
-console.log(division(20, 4))
+export function sum(a, b) {
+    return a + b;
+}
+
+
+import { multiply, sum } from "./main.js"
+console.log(multiply(5, 4))
+console.log(sum(10, 15))
+
+
+
+
+
