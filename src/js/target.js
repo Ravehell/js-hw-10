@@ -53,10 +53,10 @@ const { default: iziToast } = require("izitoast");
 //     })
 // }
 
-const button = document.querySelector("#delete-btn");
+// const button = document.querySelector("#delete-btn");
 
-button.addEventListener("click", (event) => {
-    iziToast.error({
-        message: "Не вдалося видалити файл!"
-    })
-})
+// button.addEventListener("click", (event) => {
+//     iziToast.error({
+//         message: "Не вдалося видалити файл!"
+//     })
+// })
